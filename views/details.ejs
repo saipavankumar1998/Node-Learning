@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %> 
+<body>
+    <%- include("./partials/nav.ejs") %> 
+
+    <div class="details content">
+        <h2>All blogs</h2>
+            <h3 class="title"><%= blog.title %></h3>
+            <p class="snippet"><%= blog.body %></p>
+            <a href="/blogs/del/<%= blog.id%>"  class="delete">Del</a>
+    </div>
+</body>
+</html>
